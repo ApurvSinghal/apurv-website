@@ -1,11 +1,5 @@
 [
   {
-    "id": "q-5",
-    "topic": "Enterprise Delivery & Governance",
-    "text": "I've watched technically 'perfect' architectures die in enterprise rollouts.\n\nNot because the design was wrong.\n\nBecause nobody on the team wanted to use it.\n\nA simple system with 100% buy-in wins every time. Where have you seen this play out?",
-    "createdAt": "2026-09-14T12:04:00.000Z"
-  },
-  {
     "id": "q-6",
     "topic": "Community & IT Leadership",
     "text": "Non-profit IT taught me more about security than any enterprise budget did.\n\nWith no money, you can't buy your way out of a threat.\n\nStrict Entra ID MFA and domain lockdown protect vulnerable helplines for $0 in extra tooling.\n\nYour highest-ROI security control?",

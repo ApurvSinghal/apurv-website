@@ -89,5 +89,12 @@
     "pillar": "Founder & ADM Guard",
     "source": "queue",
     "postedAt": "2026-10-04T01:52:01.016Z"
+  },
+  {
+    "id": "2106914295116136681",
+    "text": "I've watched technically 'perfect' architectures die in enterprise rollouts.\n\nNot because the design was wrong.\n\nBecause nobody on the team wanted to use it.\n\nA simple system with 100% buy-in wins every time. Where have you seen this play out?",
+    "pillar": "Enterprise Delivery & Governance",
+    "source": "queue",
+    "postedAt": "2026-10-05T01:08:07.899Z"
   }
 ]
