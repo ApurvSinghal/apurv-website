@@ -1,11 +1,5 @@
 [
   {
-    "id": "q-6",
-    "topic": "Community & IT Leadership",
-    "text": "Non-profit IT taught me more about security than any enterprise budget did.\n\nWith no money, you can't buy your way out of a threat.\n\nStrict Entra ID MFA and domain lockdown protect vulnerable helplines for $0 in extra tooling.\n\nYour highest-ROI security control?",
-    "createdAt": "2026-09-14T12:05:00.000Z"
-  },
-  {
     "id": "q-7",
     "topic": "Engineer Reflections",
     "text": "Early on, you measure yourself by how much code you write.\n\nLater, by how much complexity you kept out of production.\n\nThe best PRs I review now delete more than they add.\n\nWhen did that shift click for you?",
