@@ -1,11 +1,5 @@
 [
   {
-    "id": "q-7",
-    "topic": "Engineer Reflections",
-    "text": "Early on, you measure yourself by how much code you write.\n\nLater, by how much complexity you kept out of production.\n\nThe best PRs I review now delete more than they add.\n\nWhen did that shift click for you?",
-    "createdAt": "2026-09-14T12:06:00.000Z"
-  },
-  {
     "id": "q-8",
     "topic": "Azure Cloud & DevOps",
     "text": "A Terraform pattern that shrinks your blast radius to near zero:\n\nSplit state by how often things change, not by environment.\n\nLanding zones (yearly) ≠ AKS (monthly) ≠ app deploys (daily).\n\nBicep or Terraform for you in 2026?",

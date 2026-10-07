@@ -103,5 +103,12 @@
     "pillar": "Community & IT Leadership",
     "source": "queue",
     "postedAt": "2026-10-06T02:25:09.198Z"
+  },
+  {
+    "id": "2107648097564139955",
+    "text": "Early on, you measure yourself by how much code you write.\n\nLater, by how much complexity you kept out of production.\n\nThe best PRs I review now delete more than they add.\n\nWhen did that shift click for you?",
+    "pillar": "Engineer Reflections",
+    "source": "queue",
+    "postedAt": "2026-10-07T01:43:59.661Z"
   }
 ]
