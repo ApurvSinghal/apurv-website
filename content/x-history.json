@@ -110,5 +110,12 @@
     "pillar": "Engineer Reflections",
     "source": "queue",
     "postedAt": "2026-10-07T01:43:59.661Z"
+  },
+  {
+    "id": "2108017448586707388",
+    "text": "A Terraform pattern that shrinks your blast radius to near zero:\n\nSplit state by how often things change, not by environment.\n\nLanding zones (yearly) ≠ AKS (monthly) ≠ app deploys (daily).\n\nBicep or Terraform for you in 2026?",
+    "pillar": "Azure Cloud & DevOps",
+    "source": "queue",
+    "postedAt": "2026-10-08T02:11:39.970Z"
   }
 ]
