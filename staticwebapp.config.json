@@ -8,10 +8,17 @@
     "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
     "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload"
   },
+  "routes": [
+    {
+      "route": "/resume.pdf",
+      "rewrite": "/documents/resume.pdf"
+    }
+  ],
   "mimeTypes": {
     ".json": "application/json",
     ".txt": "text/plain",
-    ".xml": "application/xml"
+    ".xml": "application/xml",
+    ".pdf": "application/pdf"
   },
   "platform": {
     "apiRuntime": "node:22"

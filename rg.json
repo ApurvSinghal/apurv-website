@@ -1,0 +1,15 @@
+{
+  "id": "/subscriptions/fb62917f-e83e-4018-9e24-c68a7c982cf1/resourceGroups/rg-apurvsinghal-prod",
+  "location": "australiaeast",
+  "managedBy": null,
+  "name": "rg-apurvsinghal-prod",
+  "properties": {
+    "provisioningState": "Succeeded"
+  },
+  "tags": {
+    "Environment": "Production",
+    "Owner": "Apurv",
+    "Workload": "Portfolio"
+  },
+  "type": "Microsoft.Resources/resourceGroups"
+}

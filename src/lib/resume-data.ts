@@ -23,6 +23,7 @@ export interface ResumeProject {
   name: string;
   url?: string;
   role: string;
+  period?: string;
   description: string;
   highlights: string[];
   skills: string[];
@@ -57,7 +58,8 @@ export interface ResumeData {
 
 export const RESUME_DATA: ResumeData = {
   name: "Apurv Singhal",
-  title: "Lead Cloud & Platform Architect · AI Engineer · Founder",
+  title:
+    "Senior Platform & Cloud DevOps Engineer · Azure · Observability · Infrastructure as Code",
   location: "Melbourne, Victoria, Australia",
   workRights: "Full Australian Working Rights",
   email: "me@apurvsinghal.com",
@@ -65,12 +67,13 @@ export const RESUME_DATA: ResumeData = {
   linkedin: "https://www.linkedin.com/in/apurvsinghal28",
   github: "https://github.com/apurvsinghal",
   pillars: [
-    "Azure Cloud + DevOps",
+    "Azure Cloud & DevOps",
     "Platform Engineering",
-    "Applied AI & Systems",
+    "Observability & SRE",
+    "Infrastructure as Code",
   ],
   summary:
-    "Enterprise cloud and platform architect with 8+ years architecting and shipping mission-critical systems across enterprise clients including Bank of Queensland (BOQ), AGIG, Toyota Australia, EPA Victoria, and HPCA. Currently Lead Consultant at Capgemini and Founder of ADM Guard (the compliance flight recorder for automated decisions). Proven track record executing enterprise platform migrations (VMware Tanzu to Azure Container Apps), architecting Infrastructure as Code (Terraform/Bicep), driving full-stack observability (Dynatrace, New Relic), and building resilient, observable systems at scale.",
+    "Platform and cloud DevOps engineer with 8+ years building and running mission-critical systems for enterprise clients including Bank of Queensland (BOQ), AGIG, Toyota Australia, EPA Victoria and HPCA. Currently Lead Consultant at Capgemini and founder of ADM Guard. Track record in zero-downtime platform migrations, Infrastructure as Code, CI/CD automation, full-stack observability and cloud cost optimisation.",
   skills: [
     {
       category: "Azure Cloud & DevOps",
@@ -78,24 +81,24 @@ export const RESUME_DATA: ResumeData = {
         "Microsoft Azure",
         "Azure Integration Services (APIM, Logic Apps)",
         "Azure Container Apps & Tanzu",
-        "GitHub Actions & Azure DevOps CI/CD",
+        "Azure DevOps & GitHub Actions CI/CD",
         "Terraform & Bicep IaC",
-        "Full-Stack Observability (New Relic, Dynatrace, NRQL)",
+        "Full-Stack Observability (Dynatrace, New Relic, NRQL)",
         "Docker & Microservices",
-        "Azure Functions (Serverless)",
+        "Azure Functions",
         "Cosmos DB & Azure SQL",
       ],
     },
     {
       category: "Platform Engineering",
       items: [
-        "Internal Developer Platforms & Golden Paths",
         "Enterprise Platform Migrations",
-        "Salesforce DevOps (SFDX)",
-        "Release Engineering & Quality Gates",
+        "Release Engineering & CI/CD Automation",
+        "Quality Gates & Branching Strategy",
         "Cloud Cost Governance & FinOps",
         "Site Reliability & Disaster Recovery",
         "Zero-Trust & Policy-as-Code",
+        "Internal Developer Platforms & Golden Paths",
       ],
     },
     {
@@ -103,8 +106,7 @@ export const RESUME_DATA: ResumeData = {
       items: [
         "Azure AI Foundry & Azure OpenAI",
         "Claude API & Agent Architectures",
-        "RAG Workflows & Vector Embeddings",
-        "Tool Calling & Function Calling",
+        "RAG Workflows",
         "TypeScript & Next.js",
         "Python & FastAPI",
         "C# & .NET Core",
@@ -113,12 +115,11 @@ export const RESUME_DATA: ResumeData = {
     {
       category: "Governance & Security",
       items: [
-        "Zero-PII Ingestion Boundary Design",
-        "Australian Privacy Act APP 1.7–1.9",
-        "Immutable Azure WORM Storage",
-        "Cryptographic Merkle Hash Chains",
         "Azure Policy Guardrails & RBAC",
         "SAST & DevSecOps",
+        "Zero-PII Ingestion Design",
+        "Australian Privacy Act APP 1.7–1.9",
+        "Immutable Azure WORM Storage",
       ],
     },
   ],
@@ -145,9 +146,9 @@ export const RESUME_DATA: ResumeData = {
       companyUrl: "https://www.capgemini.com",
       location: "Melbourne, Australia",
       highlights: [
-        "Spearheaded Azure DevOps architecture for migrating mission-critical integration workloads to Azure Integration Services (APIM, Logic Apps, Azure Functions) with zero downtime.",
-        "Standardized automated release workflows and rollback capabilities through modular Azure DevOps YAML templates across all migration phases.",
-        "Enforced DevSecOps guardrails, automated SAST security scanning, and Azure RBAC/IaC governance to maintain platform compliance and stability.",
+        "Led Azure DevOps architecture for migrating 100+ Azure resources and 1,000+ integrations to Azure Integration Services (APIM, Logic Apps, Functions) with zero downtime. Modular YAML release templates with automated rollback delivered a more robust platform, fewer deployment errors and faster integration response times.",
+        "Standardised automated release workflows and rollback capabilities across all migration phases.",
+        "Enforced DevSecOps guardrails, automated SAST scanning, and Azure RBAC/IaC governance to maintain platform compliance and stability.",
       ],
       skills: [
         "Azure Integration Services",
@@ -158,19 +159,18 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       period: "Jun 2025 — Present",
-      role: "Salesforce DevOps Lead",
+      role: "DevOps & Release Engineering Lead",
       company: "Capgemini",
       client: "HPCA",
       companyUrl: "https://www.capgemini.com",
       location: "Melbourne, Australia",
       highlights: [
-        "Engineered automated CI/CD release pipelines utilizing SFDX, Git, and Azure DevOps, eliminating manual deployment overhead across release cycles.",
-        "Automated multi-sandbox tracking and code promotion workflows, preventing configuration drift and accelerating production release frequency.",
-        "Led delivery pods as Salesforce DevOps SME, establishing standardized Git branching strategies, automated quality gates, and deployment runbooks.",
+        "Built automated CI/CD release pipelines on Azure DevOps and Git, removing manual deployment steps across release cycles.",
+        "Set up standardised branching strategies, automated quality gates and deployment runbooks, and led delivery pods on release practices.",
       ],
       skills: [
-        "Salesforce SFDX",
         "Azure DevOps",
+        "Git",
         "CI/CD Automation",
         "Release Engineering",
       ],
@@ -183,7 +183,7 @@ export const RESUME_DATA: ResumeData = {
       companyUrl: "https://www.capgemini.com",
       location: "Melbourne, Australia",
       highlights: [
-        "Architected end-to-end Infrastructure as Code (IaC) modules using Terraform and ARM for Azure Integration Services (APIM, Logic Apps, Azure Functions), cutting environment provisioning time from days to under 30 minutes.",
+        "Architected end-to-end Infrastructure as Code modules using Terraform and ARM for Azure Integration Services (APIM, Logic Apps, Azure Functions), cutting environment provisioning time from days to under 30 minutes.",
         "Designed reusable Azure DevOps YAML pipelines for integration workloads, driving zero-downtime cutovers and environment configuration parity.",
         "Served as Azure DevOps SME, enforcing enterprise-wide CI/CD templates, Azure Policy security guardrails, and compliance baselines.",
       ],
@@ -202,37 +202,29 @@ export const RESUME_DATA: ResumeData = {
       companyUrl: "https://www.capgemini.com",
       location: "Melbourne, Australia",
       highlights: [
-        "Transitioned legacy VMware Tanzu container workloads to Azure Container Apps, modernizing containerized API delivery and developer platform velocity.",
-        "Engineered enterprise observability across hybrid environments using New Relic One (APM agents, distributed tracing, custom NRQL dashboards, and synthetic monitors), reducing MTTD/MTTR.",
-        "Authored standardized Azure DevOps YAML CI/CD pipelines, reusable Terraform/Bicep IaC modules, and cloud governance frameworks.",
-        "Re-architected Azure resource allocation, autoscaling, and monitoring policies to optimize performance and control operational cloud expenditure.",
+        "Cut Azure operational spend by ~50% by re-architecting resource allocation, autoscaling and monitoring policies, while maintaining performance across containerised API workloads.",
+        "Transitioned legacy VMware Tanzu container workloads to Azure Container Apps, modernising containerised API delivery and developer platform velocity.",
+        "Built hybrid-environment observability on New Relic One (APM agents, distributed tracing, custom NRQL dashboards, synthetic monitors) to speed up incident detection and resolution across the API platform.",
+        "Authored standardised Azure DevOps YAML CI/CD pipelines, reusable Terraform/Bicep IaC modules, and cloud governance frameworks.",
       ],
       skills: [
         "Azure Container Apps",
         "VMware Tanzu",
         "New Relic One",
         "Terraform",
+        "FinOps",
       ],
     },
     {
       period: "May 2020 — Jun 2021",
       role: "Software Developer",
       company: "Willow.ai",
-      companyUrl: "https://www.willowinc.com",
       location: "New Delhi, India",
       highlights: [
-        "Engineered scalable .NET microservices and RESTful APIs for smart building and digital twin platforms within Agile sprint cadences.",
-        "Diagnosed backend system bottlenecks to enhance application uptime, error handling, and end-to-end API response times by ~35%.",
-        "Identified environment deployment friction, implementing early CI/CD pipeline automation and developer enablement tooling.",
+        "Engineered scalable .NET microservices and RESTful APIs for smart building and digital twin platforms, improving end-to-end API response times by ~35% by diagnosing backend bottlenecks.",
+        "Introduced early CI/CD pipeline automation and developer enablement tooling to reduce deployment friction.",
       ],
-      skills: [
-        ".NET",
-        "C#",
-        "REST APIs",
-        "Microservices",
-        "CI/CD Automation",
-        "Agile",
-      ],
+      skills: [".NET", "C#", "REST APIs", "Microservices", "CI/CD"],
     },
     {
       period: "Jul 2018 — Feb 2020",
@@ -241,15 +233,13 @@ export const RESUME_DATA: ResumeData = {
       companyUrl: "https://www.techcompiler.com",
       location: "New Delhi, India",
       highlights: [
-        "Built and maintained robust RESTful APIs and backend microservices using .NET, C#, and relational database systems.",
-        "Refactored complex SQL schemas, stored procedures, and data pipelines, boosting throughput and cutting query latency by ~50%.",
-        "Configured automated build and testing checks across multi-platform application endpoints to guarantee reliable releases.",
+        "Built and maintained RESTful APIs and backend microservices using .NET, C# and relational databases, with automated build and test checks for reliable releases.",
+        "Refactored complex SQL schemas, stored procedures and data pipelines, cutting query latency by ~50%.",
       ],
       skills: [
         ".NET",
         "C#",
         "SQL Server",
-        "Database Optimization",
         "Data Pipelines",
         "APIs",
       ],
@@ -257,22 +247,20 @@ export const RESUME_DATA: ResumeData = {
   ],
   volunteer: [
     {
-      period: "April 2026 — Present",
+      period: "Apr 2026 — Present",
       role: "Head of IT (Volunteer)",
       organization: "IndianCare Inc.",
       organizationUrl: "https://www.indiancare.org.au",
       location: "Melbourne, Australia",
       highlights: [
-        "Directing complete end-to-end IT operations, cloud administration, and digital strategy for a registered Victorian community welfare non-profit.",
-        "Managing Microsoft 365, Entra ID identity governance, multi-factor authentication policies, and endpoint security standards.",
-        "Safeguarding confidential digital workflows and infrastructure supporting sensitive community helplines, family counseling, and welfare support services.",
+        "Directing end-to-end IT operations, cloud administration and digital strategy for a registered Victorian community welfare non-profit.",
+        "Managing Microsoft 365, Entra ID identity governance, MFA policies and endpoint security standards that protect confidential helpline, counselling and welfare workflows.",
       ],
       skills: [
         "End-to-End IT Operations",
         "Microsoft 365 / Entra ID",
         "Cloud Infrastructure",
         "Cyber Hygiene",
-        "Identity Governance",
       ],
     },
   ],
@@ -281,12 +269,13 @@ export const RESUME_DATA: ResumeData = {
       name: "ADM Guard",
       url: "https://www.admguard.com.au",
       role: "Founder & System Architect",
+      period: "2024 — Present",
       description:
         "The compliance flight recorder for automated decision-making systems (APP 1.7–1.9).",
       highlights: [
-        "Architected zero-PII ingestion boundary rejecting sensitive personal data at runtime before persistence (HTTP 422).",
-        "Implemented cryptographic SHA-256 Merkle hash chains anchored to Azure Australia East WORM (Write-Once-Read-Many) immutable storage.",
-        "Built drop-in client SDKs (TypeScript, Python) with client idempotency key retry safety to give Australian SaaS immutable audit readiness.",
+        "Architected a zero-PII ingestion boundary that rejects sensitive personal data at runtime before persistence (HTTP 422).",
+        "Implemented SHA-256 Merkle hash chains anchored to Azure Australia East WORM (Write-Once-Read-Many) immutable storage.",
+        "Built drop-in client SDKs (TypeScript, Python) with idempotency-key retry safety to give Australian SaaS immutable audit readiness.",
       ],
       skills: [
         "Azure Australia East",
@@ -297,6 +286,23 @@ export const RESUME_DATA: ResumeData = {
         "Python",
       ],
     },
+    {
+      name: "Personal Site & AI Assistant",
+      url: "https://apurvsinghal.com",
+      role: "Architect & Engineer",
+      description:
+        "Built a Next.js/TypeScript portfolio hosted on Azure Static Web Apps, with an AI assistant that answers questions from my own content using RAG, Azure AI Foundry and the Claude API.",
+      highlights: [
+        "Built a Next.js/TypeScript portfolio hosted on Azure Static Web Apps, with an AI assistant that answers questions from my own content using RAG, Azure AI Foundry and the Claude API.",
+      ],
+      skills: [
+        "Next.js",
+        "Azure Static Web Apps",
+        "Azure AI Foundry",
+        "Claude API",
+        "RAG",
+      ],
+    },
   ],
   education: [
     {
@@ -304,11 +310,8 @@ export const RESUME_DATA: ResumeData = {
       institution: "Guru Gobind Singh Indraprastha University (GGSIPU)",
       period: "2014 — 2018",
       details:
-        "Amity School of Engineering and Technology, New Delhi. Focus on Computer Science, Distributed Systems, Software Engineering, and Algorithms.",
+        "Guru Gobind Singh Indraprastha University, New Delhi. Focus on Computer Science, Distributed Systems, Software Engineering, and Algorithms.",
     },
   ],
-  certifications: [
-    "Microsoft Certified: Azure Fundamentals (AZ-900)",
-    "Applied Skills: Microsoft Azure",
-  ],
+  certifications: ["Microsoft Azure Applied Skills"],
 };

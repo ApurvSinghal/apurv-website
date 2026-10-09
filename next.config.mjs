@@ -2,6 +2,14 @@
 const nextConfig = {
   serverExternalPackages: ["applicationinsights"],
   allowedDevOrigins: ["127.0.0.1"],
+  async rewrites() {
+    return [
+      {
+        source: "/resume.pdf",
+        destination: "/documents/resume.pdf",
+      },
+    ];
+  },
 
   async headers() {
     const csp = [

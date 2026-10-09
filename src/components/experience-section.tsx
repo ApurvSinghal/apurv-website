@@ -13,7 +13,7 @@ interface Role {
 
 interface ExperienceGroup {
   company: string;
-  companyUrl: string;
+  companyUrl?: string;
   period: string;
   roleBadge?: string;
   roles: Role[];
@@ -105,7 +105,6 @@ const experiences: ExperienceGroup[] = [
   },
   {
     company: "Willow.ai",
-    companyUrl: "https://www.willowinc.com",
     period: "2020 — 2021",
     roles: [
       {
@@ -176,20 +175,26 @@ export function ExperienceSection() {
                 {/* Company Header */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-border/40">
                   <div className="flex flex-wrap items-center gap-3">
-                    <Link
-                      href={expGroup.companyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group/link inline-flex items-center gap-1.5"
-                    >
-                      <h3 className="text-foreground text-lg font-bold group-hover/link:text-primary transition-colors inline-flex items-center gap-1">
+                    {expGroup.companyUrl ? (
+                      <Link
+                        href={expGroup.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-flex items-center gap-1.5"
+                      >
+                        <h3 className="text-foreground text-lg font-bold group-hover/link:text-primary transition-colors inline-flex items-center gap-1">
+                          {expGroup.company}
+                          <ArrowUpRight
+                            size={15}
+                            className="opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-transform"
+                          />
+                        </h3>
+                      </Link>
+                    ) : (
+                      <h3 className="text-foreground text-lg font-bold">
                         {expGroup.company}
-                        <ArrowUpRight
-                          size={15}
-                          className="opacity-0 -translate-y-1 translate-x-1 group-hover/link:opacity-100 group-hover/link:translate-y-0 group-hover/link:translate-x-0 transition-transform"
-                        />
                       </h3>
-                    </Link>
+                    )}
 
                     {expGroup.roleBadge && (
                       <Badge

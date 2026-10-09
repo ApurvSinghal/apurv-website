@@ -5,6 +5,7 @@
   "packageManager": "pnpm@11.1.2",
   "scripts": {
     "build": "next build",
+    "build:pdf": "node scripts/generate-pdf.mjs",
     "dev": "next dev",
     "lint": "eslint --config config/eslint.config.mjs .",
     "start": "next start",
