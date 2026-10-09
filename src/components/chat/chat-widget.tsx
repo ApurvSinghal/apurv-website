@@ -28,8 +28,13 @@ const INITIAL_MESSAGE: Message = {
     "Hi there! 👋 I'm **Apurv's AI representative**.\n\nI can answer questions about his **8+ years shipping enterprise Azure systems**, his **AI engineering projects**, architecture patterns, or how to get in touch.",
 };
 
-function isSafeUrl(url: string): boolean {
-  return /^(https?:\/\/|\/|#|mailto:)/i.test(url.trim());
+function isSafeUrl(urlStr: string): boolean {
+  try {
+    const url = new URL(urlStr, "http://localhost");
+    return ["http:", "https:", "mailto:"].includes(url.protocol);
+  } catch {
+    return false;
+  }
 }
 
 // Simple lightweight markdown formatter for chat bubbles
@@ -80,6 +85,7 @@ function FormattedText({ content }: { content: string }) {
             parts.push(
               <a
                 key={match.index}
+                // codeql[js/xss-through-dom] isSafeUrl ensures safe protocols (http, https, mailto)
                 href={safeHref}
                 target={safeHref.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"

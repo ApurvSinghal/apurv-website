@@ -1,4 +1,4 @@
-import { execSync, spawn } from "node:child_process";
+import { execSync, execFileSync, spawn } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -104,9 +104,7 @@ async function main() {
   ];
 
   try {
-    execSync(`"${chromePath}" ${args.map((a) => (a.includes(" ") ? `"${a}"` : a)).join(" ")}`, {
-      stdio: "inherit",
-    });
+    execFileSync(chromePath, args, { stdio: "inherit" });
 
     const stats = fs.statSync(outputPath);
     console.log(`✅ Resume PDF successfully generated! (${(stats.size / 1024).toFixed(1)} KB)`);

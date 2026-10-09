@@ -52,7 +52,8 @@ export function generateOAuth1Header(
   // Create Signing Key: consumer_secret&token_secret
   const signingKey = `${percentEncode(creds.apiSecret)}&${percentEncode(creds.accessTokenSecret)}`;
 
-  // Calculate HMAC-SHA1 signature (OAuth 1.0a RFC 5849 strictly mandates HMAC-SHA1 for request signing)
+  // OAuth 1.0a (RFC 5849) strictly mandates HMAC-SHA1 for request signing.
+  // codeql[js/weak-cryptographic-algorithm]
   const signature = crypto
     .createHmac("sha1", signingKey)
     .update(signatureBase)
