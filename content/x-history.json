@@ -117,5 +117,12 @@
     "pillar": "Azure Cloud & DevOps",
     "source": "queue",
     "postedAt": "2026-10-08T02:11:39.970Z"
+  },
+  {
+    "id": "2108383382904217729",
+    "text": "Developer velocity isn't how fast your team types code.\n\nIt's how little stands between `git push` and verified-in-production, with zero fear of breaking the build.\n\nIf QA sign-off takes 3 weeks, that's not CI/CD. It's a queue.\n\nWhat's your lead time?",
+    "pillar": "Platform Engineering",
+    "source": "queue",
+    "postedAt": "2026-10-09T02:25:46.757Z"
   }
 ]

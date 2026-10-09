@@ -1,11 +1,5 @@
 [
   {
-    "id": "q-9",
-    "topic": "Platform Engineering",
-    "text": "Developer velocity isn't how fast your team types code.\n\nIt's how little stands between `git push` and verified-in-production, with zero fear of breaking the build.\n\nIf QA sign-off takes 3 weeks, that's not CI/CD. It's a queue.\n\nWhat's your lead time?",
-    "createdAt": "2026-09-14T12:08:00.000Z"
-  },
-  {
     "id": "q-10",
     "topic": "Applied AI & Systems",
     "text": "Treat LLM tool calling like distributed systems RPC, or it bites you in production:\n\n1. Client idempotency keys\n2. Strict Zod/Pydantic validation\n3. Deterministic fallbacks when the model hallucinates args\n\nNever trust raw LLM JSON. What's burned you here?",
