@@ -137,7 +137,7 @@ const experiences: ExperienceGroup[] = [
 const volunteerExperiences: VolunteerExperience[] = [
   {
     period: "April 2026 — Present",
-    title: "Head of IT (Volunteer)",
+    title: "Head of IT",
     organization: "IndianCare Inc.",
     organizationUrl: "https://www.indiancare.org.au",
     location: "Melbourne, Australia",

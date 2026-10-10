@@ -25,24 +25,4 @@ export async function recordServerError(
   }
 }
 
-export async function recordServerEvent(
-  name: string,
-  properties?: Record<string, string | number | boolean>,
-) {
-  if (
-    process.env.NEXT_RUNTIME === "nodejs" &&
-    process.env.APPLICATIONINSIGHTS_CONNECTION_STRING
-  ) {
-    try {
-      const appInsights = await import("applicationinsights");
-      if (appInsights.defaultClient) {
-        appInsights.defaultClient.trackEvent({
-          name,
-          properties,
-        });
-      }
-    } catch {
-      // Fail silently if Application Insights fails to record
-    }
-  }
-}
+

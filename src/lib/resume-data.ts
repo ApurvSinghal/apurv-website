@@ -248,7 +248,7 @@ export const RESUME_DATA: ResumeData = {
   volunteer: [
     {
       period: "Apr 2026 — Present",
-      role: "Head of IT (Volunteer)",
+      role: "Head of IT",
       organization: "IndianCare Inc.",
       organizationUrl: "https://www.indiancare.org.au",
       location: "Melbourne, Australia",

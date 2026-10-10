@@ -107,7 +107,7 @@ Check out the interactive [Skills](#skills) section for the complete breakdown!`
   ) {
     return `Apurv actively gives back to the Victorian community through pro bono technology leadership:
 
-- **Role**: **Head of IT (Volunteer)** at **[IndianCare Inc.](https://www.indiancare.org.au)** (April 2026 — Present)
+- **Role**: **Head of IT** at **[IndianCare Inc.](https://www.indiancare.org.au)** (April 2026 — Present)
 - **Organization**: IndianCare is a registered Melbourne-based community development and welfare non-profit providing confidential support services, helplines, and advocacy for individuals and families of Indian origin in Victoria.
 - **His Contribution**: Managing complete end-to-end IT infrastructure, cloud administration, Microsoft 365 / Entra ID identity governance, domain security, website operations, and safeguarding digital workflows for sensitive community helpline services.
 
@@ -122,7 +122,7 @@ You can learn more in the [Experience](#experience) section!`;
     return `You can view and download Apurv's dynamic, ATS-compliant executive resume directly:
 
 - **Dynamic Resume & PDF**: [View Apurv's Resume](/resume)
-- Includes his full experience at **Capgemini** (Lead Consultant), his pro bono leadership at **IndianCare Inc.** (Head of IT Volunteer), his founder venture at **ADM Guard**, and his complete Azure, Platform Engineering, and AI competencies.
+- Includes his full experience at **Capgemini** (Lead Consultant), his pro bono leadership at **IndianCare Inc.** (Head of IT), his founder venture at **ADM Guard**, and his complete Azure, Platform Engineering, and AI competencies.
 - Click **Download / Save as PDF** on the page for a clean, vector-sharp PDF!`;
   }
 

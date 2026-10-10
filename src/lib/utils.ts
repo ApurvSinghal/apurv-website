@@ -18,7 +18,3 @@ export function getYearsOfExperience(): number {
   return Math.max(0, hasReachedWorkAnniversary ? yearsSinceCareerStart : yearsSinceCareerStart - 1);
 }
 
-export function getEmailDomain(email: string) {
-  const parts = email.toLowerCase().split("@");
-  return parts.length === 2 ? parts[1] : "unknown";
-}
