@@ -18,7 +18,3 @@ import {
   id = "/subscriptions/fb62917f-e83e-4018-9e24-c68a7c982cf1/resourceGroups/rg-apurvsinghal-prod/providers/Microsoft.CognitiveServices/accounts/oai-apurvsinghal"
 }
 
-import {
-  to = azurerm_static_web_app.swa
-  id = "/subscriptions/fb62917f-e83e-4018-9e24-c68a7c982cf1/resourceGroups/rg-apurvsinghal-prod/providers/Microsoft.Web/staticSites/swa-apurvsinghal"
-}
