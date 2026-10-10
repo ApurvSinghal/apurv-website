@@ -46,7 +46,7 @@ resource "azurerm_cognitive_account" "oai" {
 
 resource "azurerm_static_web_app" "swa" {
   name                = "swa-apurvsinghal"
-  location            = azurerm_resource_group.rg.location
+  location            = "eastasia"
   resource_group_name = azurerm_resource_group.rg.name
   sku_tier            = "Free"
   sku_size            = "Free"
