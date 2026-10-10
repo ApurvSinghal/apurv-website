@@ -59,7 +59,7 @@ export interface ResumeData {
 export const RESUME_DATA: ResumeData = {
   name: "Apurv Singhal",
   title:
-    "Senior Platform & Cloud DevOps Engineer · Azure · Observability · Infrastructure as Code",
+    "Senior Cloud & Platform Engineer · Azure · Observability · Applied AI",
   location: "Melbourne, Victoria, Australia",
   workRights: "Full Australian Working Rights",
   email: "me@apurvsinghal.com",
@@ -73,7 +73,7 @@ export const RESUME_DATA: ResumeData = {
     "Infrastructure as Code",
   ],
   summary:
-    "Platform and cloud DevOps engineer with 8+ years building and running mission-critical systems for enterprise clients including Bank of Queensland (BOQ), AGIG, Toyota Australia, EPA Victoria and HPCA. Currently Lead Consultant at Capgemini and founder of ADM Guard. Track record in zero-downtime platform migrations, Infrastructure as Code, CI/CD automation, full-stack observability and cloud cost optimisation.",
+    "Senior Cloud & Platform Engineer with 8+ years building and running mission-critical systems for enterprise clients including Bank of Queensland (BOQ), AGIG, Toyota Australia, EPA Victoria and HPCA. Currently Lead Consultant at Capgemini and founder of ADM Guard. Track record in zero-downtime platform migrations, Infrastructure as Code, CI/CD automation, full-stack observability and cloud cost optimisation.",
   skills: [
     {
       category: "Azure Cloud & DevOps",
@@ -126,7 +126,7 @@ export const RESUME_DATA: ResumeData = {
   experience: [
     {
       period: "Aug 2026 — Present",
-      role: "Platform Engineer (Observability)",
+      role: "Senior Cloud & Platform Engineer",
       company: "Capgemini",
       client: "Bank of Queensland (BOQ)",
       companyUrl: "https://www.capgemini.com",
@@ -140,7 +140,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       period: "Feb 2026 — Aug 2026",
-      role: "Lead Cloud DevOps Engineer",
+      role: "Senior Cloud & Platform Engineer",
       company: "Capgemini",
       client: "Australian Gas Infrastructure Group (AGIG)",
       companyUrl: "https://www.capgemini.com",
@@ -159,7 +159,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       period: "Jun 2025 — Present",
-      role: "DevOps & Release Engineering Lead",
+      role: "Senior Cloud & Platform Engineer",
       company: "Capgemini",
       client: "HPCA",
       companyUrl: "https://www.capgemini.com",
@@ -177,7 +177,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       period: "May 2025 — Jan 2026",
-      role: "Senior DevOps Engineer (IaC & Integration)",
+      role: "Senior Cloud & Platform Engineer",
       company: "Capgemini",
       client: "EPA Victoria",
       companyUrl: "https://www.capgemini.com",
@@ -196,7 +196,7 @@ export const RESUME_DATA: ResumeData = {
     },
     {
       period: "Jun 2021 — May 2025",
-      role: "Platform Engineer",
+      role: "Senior Cloud & Platform Engineer",
       company: "Capgemini",
       client: "Toyota Australia",
       companyUrl: "https://www.capgemini.com",

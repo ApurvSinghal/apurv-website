@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { ResumeView } from "./resume-view";
 
 export const metadata: Metadata = {
-  title: "Resume · Apurv Singhal | Lead Cloud & Platform Architect",
+  title: "Resume · Apurv Singhal | Senior Cloud & Platform Engineer",
   description:
     "Executive and ATS-compliant resume of Apurv Singhal — Lead Consultant at Capgemini, Founder of ADM Guard, and Head of IT at IndianCare Inc. Specializing in Azure Cloud, DevOps, Platform Engineering, and Applied AI.",
   alternates: {
     canonical: "https://apurvsinghal.com/resume",
   },
   openGraph: {
-    title: "Resume · Apurv Singhal | Lead Cloud & Platform Architect",
+    title: "Resume · Apurv Singhal | Senior Cloud & Platform Engineer",
     description:
       "Executive and ATS-compliant resume of Apurv Singhal — Lead Consultant at Capgemini, Founder of ADM Guard, and Head of IT at IndianCare Inc.",
     url: "https://apurvsinghal.com/resume",

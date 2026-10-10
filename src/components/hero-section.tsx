@@ -19,7 +19,7 @@ export function HeroSection() {
               Apurv Singhal
             </h1>
             <p className="mt-3 text-xl text-primary font-medium">
-              Azure Cloud & Platform Architect · AI Engineer · Founder of ADM
+              Senior Cloud & Platform Engineer · AI Engineer · Founder of ADM
               Guard
             </p>
 
@@ -69,7 +69,7 @@ export function HeroSection() {
           <div id="about" className="scroll-mt-28 space-y-6">
             <p className="text-muted-foreground leading-relaxed text-lg">
               {
-                "Most enterprise platforms don't fail from lack of code; they fail from deployment friction, unobservable distributed systems, and compliance debt. I'm an enterprise cloud & platform architect with "
+                "Most enterprise platforms don't fail from lack of code; they fail from deployment friction, unobservable distributed systems, and compliance debt. I'm a senior cloud & platform engineer with "
               }
               {`${getYearsOfExperience()}+ years shipping mission-critical systems across `}
               <span className="text-foreground font-medium">
@@ -101,7 +101,7 @@ export function HeroSection() {
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
               {
-                "Beyond enterprise consulting, I serve as Head of IT (Volunteer) for "
+                "Beyond enterprise consulting, I serve as Head of IT for "
               }
               <Link
                 href="https://www.indiancare.org.au"
