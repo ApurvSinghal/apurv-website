@@ -2,3 +2,8 @@ allowBuilds:
   protobufjs: true
   sharp: true
   unrs-resolver: true
+
+overrides:
+  zod: ">=4.6.6"
+  source-map-js: ">=1.2.2"
+  "@azure/msal-node": ">=7.1.0"
