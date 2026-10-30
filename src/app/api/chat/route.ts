@@ -2,6 +2,7 @@ import { recordServerError } from "@/lib/telemetry";
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { APURV_GROUND_TRUTH } from "@/lib/agent-knowledge";
+import { getClientIp } from "@/lib/client-ip";
 import { createRateLimiter } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
@@ -156,10 +157,7 @@ Feel free to ask me about:
 
 export async function POST(req: NextRequest) {
   try {
-    const forwardedFor = req.headers.get("x-forwarded-for");
-    const ip = forwardedFor
-      ? forwardedFor.split(",")[0].trim()
-      : (req.headers.get("x-real-ip") ?? "unknown");
+    const ip = getClientIp(req.headers);
 
     if (checkChatRateLimit(ip).limited) {
       return NextResponse.json(
