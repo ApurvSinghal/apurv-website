@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
+import { getClientIp } from "@/lib/client-ip";
 import { getContactRateLimitDecision } from "@/lib/rate-limit";
 import { recordServerError } from "@/lib/telemetry";
 
@@ -11,15 +12,6 @@ const contactSchema = z.object({
   website: z.string().trim().max(200).optional(),
   formStartedAt: z.number().int().positive().optional(),
 });
-
-function getClientIp(request: NextRequest) {
-  const forwardedFor = request.headers.get("x-forwarded-for");
-  if (forwardedFor) {
-    return forwardedFor.split(",")[0]?.trim() || "unknown";
-  }
-
-  return request.headers.get("x-real-ip") ?? "unknown";
-}
 
 function getDurationMs(startTimeMs: number) {
   return Date.now() - startTimeMs;
@@ -75,7 +67,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const clientIp = getClientIp(request);
+    const clientIp = getClientIp(request.headers);
     const rateLimitDecision = await getContactRateLimitDecision(clientIp);
 
     if (rateLimitDecision.limited) {
@@ -215,14 +207,14 @@ export async function POST(request: NextRequest) {
       const ackResult = await resend.emails.send({
         from: fromEmail,
         to: email,
-        subject: `Thanks for reaching out, ${safeNameForSubject}`,
+        subject: "Thanks for reaching out",
         replyTo: adminEmail,
-        text: `Hi ${name},\n\nThanks for reaching out! I have received your message and will get back to you within 24-48 hours.\n\nFor your reference, here is a copy of your message:\n\n${message}\n\nBest,\nApurv Singhal`,
+        // Fixed text only: never echo visitor-supplied content to an address
+        // the visitor chose, since this sender is the site's own domain.
+        text: `Hi there,\n\nThanks for reaching out! I have received your message and will get back to you within 24-48 hours.\n\nBest,\nApurv Singhal`,
         html: `
-            <p>Hi ${escapedName},</p>
+            <p>Hi there,</p>
             <p>Thanks for reaching out! I have received your message and will get back to you within 24-48 hours.</p>
-            <p><strong>Your message:</strong></p>
-            <p>${escapedMessageWithBreaks}</p>
             <p>Best,<br/>Apurv Singhal</p>
           `,
       });
